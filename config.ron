@@ -23,19 +23,19 @@
     max_window_width: None,
     layouts: [
         MainAndVertStack,
-        MainAndHorizontalStack,
-        MainAndDeck,
-        GridHorizontal,
-        EvenHorizontal,
-        EvenVertical,
-        Fibonacci,
-        LeftMain,
-        CenterMain,
-        CenterMainBalanced,
-        CenterMainFluid,
-        Monocle,
-        RightWiderLeftStack,
-        LeftWiderRightStack,
+        // MainAndHorizontalStack,
+        // MainAndDeck,
+        // GridHorizontal,
+        // EvenHorizontal,
+        // EvenVertical,
+        // Fibonacci,
+        // LeftMain,
+        // CenterMain,
+        // CenterMainBalanced,
+        // CenterMainFluid,
+        // Monocle,
+        // RightWiderLeftStack,
+        // LeftWiderRightStack,
     ],
     layout_mode: Tag,
     insert_behavior: Bottom,
@@ -52,9 +52,11 @@
         ( window_class: "(?i)code", spawn_on_tag: 2 ),
         ( window_class: "(?i)firefox", spawn_on_tag: 3 ),
         ( window_class: "(?i).*league.*", spawn_on_tag: 6, spawn_floating: true),
+        ( window_class: "(?i).*riot.*", spawn_on_tag: 6, spawn_floating: true),
+        ( window_class: "(?i).*explorer.*", spawn_on_tag: 6, spawn_floating: true),
         ( window_class: "(?i).*lutris.*", spawn_on_tag: 6, spawn_floating: true)
     ],
-    disable_current_tag_swap: false,
+    disable_current_tag_swap: true,
     disable_tile_drag: false,
     disable_window_snap: true,
     focus_behaviour: Sloppy,
@@ -73,7 +75,8 @@
         (command: Execute, value: "rofi -show drun", modifier: ["modkey"], key: "p"),
         (command: Execute, value: "kitty", modifier: ["modkey"], key: "Return"),
         (command: Execute, value: "code", modifier: ["modkey"], key: "c"),
-
+        (command: Execute, value: "xset dpms force off", modifier: ["modkey"], key: "0"),
+        
         // Window control
         (command: CloseWindow, value: "", modifier: ["modkey", "Shift"], key: "q"),
 
@@ -81,22 +84,25 @@
         (command: ToggleScratchPad, value: "Kitty", modifier:["modkey"], key: "s"),
 
         
-        // Layout
-        (command: NextLayout, value: "", modifier: ["modkey", "Control"], key: "k"),
-        (command: PreviousLayout, value: "", modifier: ["modkey", "Control"], key: "j"),
+        // Layout - Alt 
+        (command: NextLayout, value: "", modifier: ["modkey", "Alt"], key: "k"),
+        (command: PreviousLayout, value: "", modifier: ["modkey", "Alt"], key: "j"),
+        (command: IncreaseMainWidth, value: "5", modifier: ["modkey", "Alt"], key: "l"),
+        (command: DecreaseMainWidth, value: "5", modifier: ["modkey", "Alt"], key: "h"),
+        (command: RotateTag, modifier: ["modkey", "Alt"], key: "r"),
 
         // Focus
         (command: FocusWindowDown, value: "", modifier: ["modkey"], key: "j"),
         (command: FocusWindowUp, value: "", modifier: ["modkey"], key: "k"),
-        (command: FocusWorkspaceNext, value: "", modifier: ["modkey"], key: "l"),
-        (command: FocusWorkspacePrevious, value: "", modifier: ["modkey"], key: "h"),
+        (command: FocusWorkspaceNext, value: "", modifier: ["modkey"], key: "Tab"),
+        
 
         // Window Movemenet
         (command: MoveWindowTop, value: "", modifier: ["modkey", "Shift"], key: "t"),
         (command: MoveWindowDown, value: "", modifier: ["modkey", "Shift"], key: "j"),
         (command: MoveWindowUp, value: "", modifier: ["modkey", "Shift"], key: "k"),       
-        (command: ToggleFullScreen, modifier: ["modkey"], key: "f"),
         (command: ToggleFloating, modifier: ["modkey", "Shift"], key: "f"), 
+        (command: ToggleFullScreen, modifier: ["modkey"], key: "f"),
 
 
         // Workspace movement 
