@@ -13,3 +13,4 @@ pkill picom
 pkill polybar
 pkill nitrogen
 pkill dunst
+pkill nm-applet
