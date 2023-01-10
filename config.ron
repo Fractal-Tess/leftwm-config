@@ -76,6 +76,9 @@
         (command: Execute, value: "kitty", modifier: ["modkey"], key: "Return"),
         (command: Execute, value: "code", modifier: ["modkey"], key: "c"),
         (command: Execute, value: "xset dpms force off", modifier: ["modkey"], key: "0"),
+        (command: Execute, value: "pcmanfm -n", modifier: ["modkey"], key: "e"),
+        (command: Execute, value: "kitty -e lf", modifier: ["modkey", "Shift"], key: "e"),
+        (command: Execute, value: "firefox", modifier: ["modkey"], key: "a"),
         
         // Window control
         (command: CloseWindow, value: "", modifier: ["modkey", "Shift"], key: "q"),
