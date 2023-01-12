@@ -13,6 +13,8 @@ nitrogen --restore &
 picom --config ~/.config/picom/picom.conf & 
 xrandr --output HDMI-0 --primary &
 nm-applet &
+clipcatd 
+
 
 #set the theme.ron config
 leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
