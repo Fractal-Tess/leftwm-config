@@ -17,8 +17,10 @@
         "",
         "",
         "ﱘ",
-        "",
-        "[X]"
+        // "",
+        "",
+        "ﭮ",
+        ""
     ],
     max_window_width: None,
     layouts: [
@@ -122,13 +124,17 @@
         (command: GotoTag, value: "4", modifier: ["modkey"], key: "4"),
         (command: GotoTag, value: "5", modifier: ["modkey"], key: "5"),
         (command: GotoTag, value: "6", modifier: ["modkey"], key: "6"),
+        (command: GotoTag, value: "7", modifier: ["modkey"], key: "7"),
+        (command: GotoTag, value: "8", modifier: ["modkey"], key: "8"),
         
         (command: MoveToTag, value: "1", modifier: ["modkey", "Shift"], key: "1"),
         (command: MoveToTag, value: "2", modifier: ["modkey", "Shift"], key: "2"),
         (command: MoveToTag, value: "3", modifier: ["modkey", "Shift"], key: "3"),
         (command: MoveToTag, value: "4", modifier: ["modkey", "Shift"], key: "4"),
         (command: MoveToTag, value: "5", modifier: ["modkey", "Shift"], key: "5"),
-        (command: MoveToTag, value: "6", modifier: ["modkey", "Shift"], key: "6")
+        (command: MoveToTag, value: "6", modifier: ["modkey", "Shift"], key: "6"),
+        (command: MoveToTag, value: "7", modifier: ["modkey", "Shift"], key: "7"),
+        (command: MoveToTag, value: "8", modifier: ["modkey", "Shift"], key: "8")
     ],
     state_path: None,
 )
