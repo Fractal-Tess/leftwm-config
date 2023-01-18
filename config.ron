@@ -54,6 +54,7 @@
         ( window_class: "(?i)code", spawn_on_tag: 2 ),
         ( window_class: "(?i)firefox", spawn_on_tag: 3 ),
         ( window_class: "(?i).*discord.*", spawn_on_tag: 6 ),
+        ( window_class: "(?i).*thunderbird.*", spawn_on_tag: 7 ),
         ( window_class: "(?i).*league.*", spawn_on_tag: 5, spawn_floating: true),
         ( window_class: "(?i).*wine.*", spawn_on_tag: 5, spawn_floating: true),
         ( window_class: "(?i).*riot.*", spawn_on_tag: 5, spawn_floating: true),
