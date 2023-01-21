@@ -77,14 +77,18 @@
         (command: Execute, value: "polybar-msg cmd toggle", modifier: ["modkey"], key: "b"),
 
         // Execute
-        (command: Execute, value: "rofi -show drun", modifier: ["modkey"], key: "p"),
+        (command: Execute, value: "/home/fractal-tess/.config/rofi/scripts/launcher_t7", modifier: ["modkey"], key: "p"),
+        (command: Execute, value: "/home/fractal-tess/.config/rofi/powermenu/type-2/powermenu.sh", modifier: ["modkey"], key: "Escape"),
         (command: Execute, value: "kitty", modifier: ["modkey"], key: "Return"),
         (command: Execute, value: "kitty -e zsh -c ncmpcpp", modifier: ["modkey"], key: "m"),
         (command: Execute, value: "code", modifier: ["modkey"], key: "c"),
         (command: Execute, value: "xset dpms force off", modifier: ["modkey"], key: "0"),
         (command: Execute, value: "pcmanfm -n", modifier: ["modkey"], key: "e"),
         (command: Execute, value: "clipcat-menu", modifier: ["modkey"], key: "h"),
+        (command: Execute, value: "discord", modifier: ["modkey"], key: "d"),
         (command: Execute, value: "firefox", modifier: ["modkey"], key: "a"),
+        (command: Execute, value: "firefox --new-tab https://github.com/Fractal-Tess", modifier: ["modkey"], key: "g"),
+        (command: Execute, value: "firefox --new-tab https://youtube.com", modifier: ["modkey"], key: "y"),
         
         // Window control
         (command: CloseWindow, value: "", modifier: ["modkey", "Shift"], key: "q"),

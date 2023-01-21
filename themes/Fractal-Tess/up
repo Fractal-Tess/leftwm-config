@@ -31,3 +31,7 @@ do
   monitor=$monitor offset=$x width=$width polybar -c $SCRIPTPATH/polybar.config $barname &> /dev/null &
   let index=indextemp
 done
+
+# Additional bar
+monitor="DP-4" polybar -c $SCRIPTPATH/polybar.config second_screen_second_bar &> /dev/null &
+
