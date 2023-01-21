@@ -85,6 +85,7 @@
         (command: Execute, value: "xset dpms force off", modifier: ["modkey"], key: "0"),
         (command: Execute, value: "pcmanfm -n", modifier: ["modkey"], key: "e"),
         (command: Execute, value: "clipcat-menu", modifier: ["modkey"], key: "h"),
+        (command: Execute, value: "flameshot gui", modifier: ["modkey", "Shift"], key: "s"),
         (command: Execute, value: "discord", modifier: ["modkey"], key: "d"),
         (command: Execute, value: "firefox", modifier: ["modkey"], key: "a"),
         (command: Execute, value: "firefox --new-tab https://github.com/Fractal-Tess", modifier: ["modkey"], key: "g"),

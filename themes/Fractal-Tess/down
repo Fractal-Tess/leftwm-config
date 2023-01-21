@@ -15,3 +15,4 @@ pkill nitrogen
 pkill dunst
 pkill nm-applet
 pkill clipcatd
+pkill flameshot
