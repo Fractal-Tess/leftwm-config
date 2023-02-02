@@ -15,6 +15,7 @@ xrandr --output HDMI-0 --primary &
 nm-applet &
 flameshot &
 clipcatd &
+sudo fancurve & 
 
 nvidia-smi -q | rg -i "fan speed" | awk -F ':' '{print $2}' | sed 's/[^0-9]//ig' > $HOME/.gpu_fanspeed
 

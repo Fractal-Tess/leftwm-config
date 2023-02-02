@@ -79,6 +79,7 @@
         // Execute
         (command: Execute, value: "/home/fractal-tess/.config/rofi/scripts/launcher_t7", modifier: ["modkey"], key: "p"),
         (command: Execute, value: "/home/fractal-tess/.config/rofi/powermenu/type-2/powermenu.sh", modifier: ["modkey"], key: "Escape"),
+        (command: Execute, value: "/home/fractal-tess/.config/leftwm/themes/Fractal-Tess/scripts/toggle_keyboard.sh", modifier: ["Alt"], key: "1"),
         (command: Execute, value: "kitty", modifier: ["modkey"], key: "Return"),
         (command: Execute, value: "kitty -e zsh -c ncmpcpp", modifier: ["modkey"], key: "m"),
         (command: Execute, value: "code", modifier: ["modkey"], key: "c"),
