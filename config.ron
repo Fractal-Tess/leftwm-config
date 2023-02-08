@@ -59,7 +59,10 @@
         ( window_class: "(?i).*wine.*", spawn_on_tag: 5, spawn_floating: true),
         ( window_class: "(?i).*riot.*", spawn_on_tag: 5, spawn_floating: true),
         ( window_class: "(?i).*explorer.*", spawn_on_tag: 5, spawn_floating: true),
-        ( window_class: "(?i).*lutris.*", spawn_on_tag: 5, spawn_floating: true)
+        ( window_class: "(?i).*lutris.*", spawn_on_tag: 5, spawn_floating: true),
+        ( window_class: "(?i).*sun-awt-X11-XFramePeer.*", spawn_on_tag: 5, spawn_floating: true),
+        ( window_class: "(?i).*minecraft.*", spawn_on_tag: 5, spawn_floating: true),
+        ( window_class: "(?i).*tlauncher.*", spawn_on_tag: 5, spawn_floating: true)
     ],
     disable_current_tag_swap: true,
     disable_tile_drag: false,
