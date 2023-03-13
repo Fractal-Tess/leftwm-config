@@ -16,4 +16,4 @@ pkill dunst
 pkill nm-applet
 pkill clipcatd
 pkill flameshot
-pkill fancurve 
+sudo pkill fancurve 
