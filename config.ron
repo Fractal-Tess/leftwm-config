@@ -61,7 +61,10 @@
         ( window_class: "(?i).*lutris.*", spawn_on_tag: 4, spawn_floating: true),
         ( window_class: "(?i).*sun-awt-X11-XFramePeer.*", spawn_on_tag: 4, spawn_floating: true),
         ( window_class: "(?i).*minecraft.*", spawn_on_tag: 4, spawn_floating: true),
-        ( window_class: "(?i).*tlauncher.*", spawn_on_tag: 4, spawn_floating: true)
+        ( window_class: "(?i).*tlauncher.*", spawn_on_tag: 4, spawn_floating: true),
+        ( window_class: "(?i).*dbeaver.*", spawn_on_tag: 5, spawn_floating: true),
+        ( window_class: "(?i).*compass.*", spawn_on_tag: 5),
+
     ],
     disable_current_tag_swap: true,
     disable_tile_drag: false,
