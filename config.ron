@@ -64,8 +64,9 @@
         ( window_class: "(?i).*tlauncher.*", spawn_on_tag: 4, spawn_floating: true),
         ( window_class: "(?i).*dbeaver.*", spawn_on_tag: 5, spawn_floating: true),
         ( window_class: "(?i).*compass.*", spawn_on_tag: 5),
-        ( window_class: "(?i).*steam_app_238960.*", spawn_on_tag: 5),
-        ( window_class: "(?i).*awakened.*", spawn_floating:true)
+        ( window_class: "(?i).*238960.*", spawn_on_tag: 5),
+        ( window_class: "(?i).*path of building.exe.*", spawn_on_tag:4),
+        ( window_class: "(?i).*awakened.*", spawn_floating:true),
 
     ],
     disable_current_tag_swap: true,
