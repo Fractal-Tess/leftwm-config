@@ -1,4 +1,6 @@
-#! /bin/sh
+#! /bin/bash
+
+trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
 
 bar="▁▂▃▄▅▆▇█"
 dict="s/;//g;"
@@ -23,12 +25,16 @@ config_file="/tmp/polybar_cava_config"
 echo "
 [general]
 bars = 20
+
+[input]
+method = pulse
+
 [output]
+channels = mono
 method = raw
 raw_target = $pipe
 data_format = ascii
 ascii_max_range = 7
-channels = mono
 " > $config_file
 
 # run cava in the background
