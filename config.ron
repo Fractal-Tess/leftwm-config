@@ -69,6 +69,9 @@
         ( window_class: "(?i).*awakened.*", spawn_floating:true),
         ( window_class: "(?i).*felsong-64.exe.*", spawn_on_tag:4),
         ( window_class: "(?i).*steam_app_8500.*", spawn_on_tag:4),
+
+        // Development projects with window spawns
+        ( window_class: "(?i).*project-s*", spawn_on_tag:2, spawn_floating:true )
     ],
     disable_current_tag_swap: true,
     disable_tile_drag: false,
@@ -99,6 +102,7 @@
         (command: Execute, value: "discord", modifier: ["modkey"], key: "d"),
         (command: Execute, value: "lutris", modifier: ["modkey"], key: "l"),
         (command: Execute, value: "obs", modifier: ["modkey"], key: "o"),
+        (command: Execute, value: "thunderbird", modifier: ["modkey"], key: "t"),
         (command: Execute, value: "google-chrome-stable", modifier: ["modkey"], key: "a"),
         (command: Execute, value: "google-chrome-stable https://github.com/Fractal-Tess", modifier: ["modkey"], key: "g"),
         (command: Execute, value: "google-chrome-stable https://youtube.com", modifier: ["modkey"], key: "y"),
